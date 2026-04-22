@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>A read on where AI fits in SBIR Advisors' stack, and where it does not.</title>
+<meta name="description" content="Saw the $600M cumulative number and the partner-side catalog push on AWS Marketplace. Proposal throughput looks like the linear constraint, and BAA-to-client matching is eating senior people." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Arimo:ital,wght@0,400;0,500;0,700;1,400&family=Azeret+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo-link" href="https://sbiradvisors.com" target="_blank" rel="noopener" aria-label="SBIR Advisors">
+      <img src="logo.png" alt="SBIR Advisors" class="logo" />
+    </a>
+    <div class="header-meta">
+      <span class="meta-dot"></span>
+      <span class="meta-label">Prepared for eMerge Americas 2026 &middot; Booth 1166</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="eyebrow">
+          <span class="eyebrow-mark">//</span>
+          <span>Briefing for Sam, Kevin, and the capture team</span>
+        </div>
+        <h1>A read on where AI fits in SBIR Advisors' stack, and where it does not.</h1>
+        <p class="lede">
+          Two veteran-founded shops. One orchestration layer. One SBIR capture engine.
+          A 30-minute conversation, not a pitch.
+        </p>
+        <div class="hero-cta-row">
+          <a class="btn btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Schedule The 30 Minutes</a>
+          <a class="btn btn-ghost" href="#pitch">Read The Brief</a>
+        </div>
+      </div>
+      <aside class="hero-right">
+        <div class="card stat-card">
+          <div class="stat-label">Cumulative client awards</div>
+          <div class="stat-value">$600M+</div>
+          <div class="stat-sub">What SBIR Advisors clients have won to date.</div>
+        </div>
+        <div class="card stat-card stat-card-alt">
+          <div class="stat-label">The binding constraint</div>
+          <div class="stat-value small">Proposal throughput.</div>
+          <div class="stat-sub">Scales linearly with senior headcount unless orchestration takes the first draft.</div>
+        </div>
+      </aside>
+    </div>
+    <div class="hero-footer-bar">
+      <span class="bar-tag">FIT-PARTNERSHIP</span>
+      <span class="bar-sep"></span>
+      <span class="bar-text">Peer to peer. Not a vendor sell.</span>
+    </div>
+  </section>
+
+  <section class="pitch" id="pitch">
+
+    <div class="section-head">
+      <span class="section-number">01</span>
+      <h2>The opening</h2>
+    </div>
+
+    <div class="prose">
+      <p>
+        You have moved 70+ clients through SBIR and STTR capture since late 2020.
+        Over $600M in awards. A partner catalog for government buyers, AWS Marketplace placements,
+        and a Phase III transition layer. The story is a two-sided network: sellers on one side,
+        contracting officers on the other, and a consultancy in the middle making sure the paperwork is right.
+        We have read your resources page, watched the Bryan Guinn podcast, and listened to Kevin on 5 Minute Salute.
+        The question is not whether SBIR Advisors has momentum. It is where the next 50% of leverage comes from
+        without tripling your headcount.
+      </p>
+    </div>
+
+    <div class="section-head">
+      <span class="section-number">02</span>
+      <h2>The Eduba frame</h2>
+    </div>
+
+    <div class="prose frame-block">
+      <p>
+        Our working view on any consultancy your size: about 60% of what your team does is traditional
+        software and database work that somebody is currently doing in Word, email, and Google Sheets.
+        Another 30% is rule-based logic (compliance checks, topic matching, budget math, data-rights clauses).
+        Only 10% is genuine AI, and that 10% is where generative help on first-draft proposal narrative,
+        BAA summarization, and client-tech-to-topic fit actually pays off. Teams that skip this distinction
+        end up with an LLM wrapper where Postgres and a decision tree would have done the job faster,
+        cheaper, and with better guarantees. An orchestration layer respects those boundaries.
+      </p>
+
+      <div class="ratio-strip" aria-hidden="true">
+        <div class="ratio ratio-60"><span class="ratio-num">60%</span><span class="ratio-lbl">Traditional code + database</span></div>
+        <div class="ratio ratio-30"><span class="ratio-num">30%</span><span class="ratio-lbl">Rule-based logic</span></div>
+        <div class="ratio ratio-10"><span class="ratio-num">10%</span><span class="ratio-lbl">Genuine AI</span></div>
+      </div>
+    </div>
+
+    <div class="section-head">
+      <span class="section-number">03</span>
+      <h2>The case</h2>
+    </div>
+
+    <div class="prose">
+      <p>
+        We built a multi-agent system for a compliance-heavy operator working in the DRC.
+        The team was burning 160+ hours per month producing regulator-ready documents from messy inputs.
+        After the orchestration layer shipped, that same work took under 5 minutes, with a human approving
+        the output rather than generating it. The architecture is the same shape you need: inspectable context,
+        layered memory, and a review gate at every step a contracting officer could later audit.
+      </p>
+    </div>
+
+    <div class="section-head">
+      <span class="section-number">04</span>
+      <h2>The paper</h2>
+    </div>
+
+    <div class="prose">
+      <p>
+        The architecture under that work is documented here: Interpretable Context Methodology, submitted to ACM TiiS.
+        Folder structure as agent architecture, built to be inspectable and reproducible.
+        Repo: <a href="https://github.com/RinDig/Interpretable-Context-Methodology-ICM-" target="_blank" rel="noopener">github.com/RinDig/Interpretable-Context-Methodology-ICM-</a>.
+      </p>
+      <p class="aside-line">
+        For regulated-industry governance work, our audit tooling is open as well. Ethics Engine is a psychometric
+        assessment tool for evaluating ideological and moral patterns in LLMs:
+        <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a>
+        and <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>.
+      </p>
+    </div>
+
+    <div class="section-head">
+      <span class="section-number">05</span>
+      <h2>The partnership angle</h2>
+    </div>
+
+    <div class="prose">
+      <p>
+        We are a veteran-founded shop as well. My colleague Jake is Marine Corps, eight years,
+        F-35 and F-18 avionics and cryptographic systems, MSc from Edinburgh. He has run
+        1,500+ enterprise trainees through workshops at Pacific Life and Colgate-Palmolive via Correlation One since May 2025.
+        KPMG UK, one of the Big Four, sent 40+ executives through as well. For heavier ML engineering
+        that sits below the orchestration layer, Eduba partners with NLP Logix, which has been in
+        machine learning since 2011 and runs over 150 data scientists. For SBIR Advisors specifically,
+        the cleanest first step is a 30-minute scope on either an internal build (proposal orchestration)
+        or a two-way referral relationship where your dual-use startups who need AI strategy come to us,
+        and our government-adjacent clients who need SBIR capture come to you.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="cta-block">
+    <div class="cta-grid">
+      <div class="cta-left">
+        <div class="cta-eyebrow">Next step</div>
+        <h2>30 minutes with Matt.</h2>
+        <p>
+          Bring one workflow your best proposal writer would trade for a week of vacation.
+          We will do a live orchestration audit and leave you with a short write-up you can hand to Sam.
+        </p>
+        <a class="btn btn-primary btn-lg" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book The Call</a>
+      </div>
+      <div class="cta-right">
+        <div class="contact-card">
+          <div class="contact-name">Matt Creamer</div>
+          <div class="contact-title">CRO, Eduba</div>
+          <div class="contact-sep"></div>
+          <div class="contact-line">Calendar</div>
+          <a class="contact-value" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">calendly.com/thecro-eduba/30min</a>
+          <div class="contact-line">Posture</div>
+          <div class="contact-value contact-value-static">Peer to peer. Veteran shop on both sides of the table.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-left">
+      Prepared by Eduba for SBIR Advisors. Not a vendor approach.
+      Methodology and partnership conversation only.
+    </div>
+    <div class="footer-right">
+      <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
